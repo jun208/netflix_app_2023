@@ -45,15 +45,13 @@ function DetailPage() {
     <section>
       <img src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt={movie.title || movie.name || movie.original_name}/>
       <div className='detail__content'>
- 
-       
 
       </div>
     </section>
     <h2 className='detail__title'>{movie.title}</h2>
       <p>평점:{movie.vote_average}</p>
       <p>{movie.overview}</p>
-      <iframe src={`https://www.youtube.com/embed/${movie.videos.results[0]?.key}?controls=0&autoplay=1&loop=1&playlist=${movie.videos.results[0]?.key}`}></iframe>  
+      {/* <iframe src={`https://www.youtube.com/embed/${movie.videos.results[0]?.key}?controls=0&autoplay=1&loop=1&playlist=${movie.videos.results[0]?.key}`}></iframe>   */}
      
      </>
   )
